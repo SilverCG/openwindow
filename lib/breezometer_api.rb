@@ -5,7 +5,7 @@ class BreezoMeterAPI
   base_uri 'http://api-beta.breezometer.com'
 
   def initialize(lat, lon)
-    @options = { query: {lat: lat, lon: lon, api: self.api_key} }
+    @options = { query: {lat: lat, lon: lon, key: self.api_key} }
   end
 
   def api_key

@@ -1,2 +1,4 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
+= form_tag search_path do
+  = text_field_tag 'lat', nil, placeholder: 'latitude'
+  = text_field_tag 'lon', nil, placeholder: 'longitude'
+  = submit_tag 'submit'
