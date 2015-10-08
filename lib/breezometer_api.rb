@@ -13,7 +13,7 @@ class BreezoMeterAPI
   end
 
   def gaqi
-    self.class.get('/baqi/', @options)
+    self.class.get('/baqi/', @options)['breezometer_aqi']
   end
 
 end

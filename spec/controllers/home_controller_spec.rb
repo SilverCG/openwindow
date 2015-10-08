@@ -9,11 +9,11 @@ RSpec.describe HomeController, type: :controller do
     end
   end
 
-  describe "GET #show" do
+  describe "search" do
     it "returns http success" do
-      get :show
+      get :search
       expect(response).to have_http_status(:success)
+      expect(response).to render_template :show
     end
   end
-
 end
