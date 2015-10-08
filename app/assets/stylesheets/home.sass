@@ -1,4 +1,40 @@
+$black: #3B3E43
+$dk-gray: #9A9A9A
+$lt-gray: #EBEBEB
+$lighter: #f3f3f3
+$white: #fff
+
+$red: #FF6A6A
+$green: #57BB66
+$blue: #0071BB
+
+
+body
+  background-image: image-url("bg-web.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+
+  h1
+    color: $blue
+    font-size: 2rem
+
+  h2
+    color: $black
+    font-size: 1rem
+
+.box
+  margin-top: 200px
+  background: $white
+  border: 1px solid $lt-gray
+  border-radius: 10px
+  padding: 30px
+
+#form
+  @extend .box
+
+#results
+  @extend .box
+
 #map
-  height: 250px
-  width: 500px
+  min-height: 200px
 

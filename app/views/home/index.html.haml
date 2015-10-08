@@ -1,3 +1,13 @@
-= form_tag search_path do
-  = text_field_tag 'address', nil, placeholder: 'address'
-  = submit_tag 'submit'
+.row
+  .small-6.small-centered.columns
+    #form
+      %h1 OpenWindow
+      %h2 Should you open your windows?
+      = form_tag search_path do
+        .row
+          .small-12.columns
+            .row.collapse
+              .small-10.columns
+                = text_field_tag 'address', nil, placeholder: 'your city'
+              .small-2.columns
+                = submit_tag 'submit', class: 'button postfix'

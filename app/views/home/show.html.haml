@@ -1,5 +1,13 @@
-= @air
-= @location
-= @weather
-= @openwindow
-#map{data: {lat: @location['lat'] , lon: @location['lng']}}
+.row
+  .small-8.small-centered.columns
+    #results.row
+      %h1 OpenWindow
+      #map.small-6.columns{data: {lat: @location['lat'] , lon: @location['lng']}}
+      %ul.small-5.columns
+        %li
+          Air Quality Index: #{ @air }
+        %li
+          Air Temperature: #{ @weather }
+        %li
+          Open the windows? #{ @openwindow ? "Yes" : "No" }
+
