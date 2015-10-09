@@ -11,7 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'httparty'
 gem 'haml-rails'
-gem 'foundation-rails'
+gem 'foundation-rails', '= 5.5.2.1'
 gem 'figaro'
 
 
