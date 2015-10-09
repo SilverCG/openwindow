@@ -5,7 +5,11 @@ class OpenWeatherAPI
   base_uri 'api.openweathermap.org/data/2.5/weather'
 
   def initialize(lat, lon)
-    @options = { query: {lat: lat ,lon: lon, units: 'imperial'} }
+    @options = { query: {lat: lat ,lon: lon, units: 'imperial', APPID: self.api_key} }
+  end
+
+  def api_key
+    ENV['OPENWEATHER_API_KEY']
   end
 
   def current
