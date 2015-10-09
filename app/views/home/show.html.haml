@@ -1,9 +1,9 @@
 .row
-  .small-8.small-centered.columns
+  .small-12.medium-8.large-6.small-centered.columns
     #results.row
       %h1 OpenWindow
-      #map.small-6.columns{data: {lat: @location['lat'] , lon: @location['lng']}}
-      %ul.small-5.columns
+      #map.small-12.medium-5.columns{data: {lat: @location['lat'] , lon: @location['lng']}}
+      %ul.small-12.medium-6.columns
         %li
           Air Quality Index: #{ @air }
         %li
